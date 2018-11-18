@@ -2,7 +2,7 @@ class Shop < ApplicationRecord
   belongs_to :user, optional: true
   has_and_belongs_to_many :users
   alias_attribute :fans, :users
-  has_many :products
+  has_many :products, dependent: :destroy
 
   has_attached_file :shop_picture, styles: { big: "600x600>", medium: "300x300>", thumb: "100x100>" }, default_url: "/images/honey.jpg"
   validates_attachment_content_type :shop_picture, content_type: /\Aimage\/.*\z/

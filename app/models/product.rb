@@ -28,7 +28,7 @@ class Product < ApplicationRecord
       description: description,
       categories: categories.map(&:name),
       price: {
-        raw: price,
+        raw: "#{price}",
         formatted: number_to_currency(price.to_f)
       },
       shop: shop.simple_info,
