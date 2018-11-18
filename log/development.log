@@ -5836,3 +5836,5 @@ Processing by ProductsController#destroy as */*
 Completed 200 OK in 95ms (Views: 0.6ms | ActiveRecord: 66.0ms)
 
 
+  [1m[36mProduct Load (86.8ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m
+  [1m[36mProduct Load (89.1ms)[0m  [1m[34mSELECT `products`.* FROM `products`[0m

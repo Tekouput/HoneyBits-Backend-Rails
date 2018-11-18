@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: root
   password: <%= ENV['HONEYBITS_DATABASE_PASSWORD'] %>
-  socket: /var/run/mysqld/mysqld.sock
+  host: 104.248.61.12
 
 development:
   <<: *default
