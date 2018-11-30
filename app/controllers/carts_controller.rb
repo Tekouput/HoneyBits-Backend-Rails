@@ -12,7 +12,7 @@ class CartsController < ApplicationController
 
   def remove_item
     product = Product.find(params[:id])
-    get_cart.products.remove(product)
+    get_cart.products.delete(product)
   end
 
   private
