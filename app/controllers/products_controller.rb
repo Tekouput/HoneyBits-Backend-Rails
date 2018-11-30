@@ -122,7 +122,7 @@ class ProductsController < ApplicationController
   # POST /products/favorite
   def create_favorites
     product = Product.find(params[:id])
-    @current_user.favorite_products << product
+    @current_user.favorite_products << product unless (@current.favorite_products.where(id: params[:id]).count > 0)
     @current_user.save!
     render json: product.simple_info(@current_user), status: :ok
   rescue => error
