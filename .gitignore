@@ -52,3 +52,7 @@ build-iPhoneSimulator/
 test/fixtures/loans.yml
 test/models/loan_test.rb
 vendor/
+./log/production.log
+log/production.log
+public/system/product_images/*
+public/system/shops/*
